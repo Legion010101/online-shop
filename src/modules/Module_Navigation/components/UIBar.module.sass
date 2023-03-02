@@ -1,0 +1,91 @@
+.UIBar
+  margin-top: 10px
+.logo
+  & img
+   height: 140px
+   width: 190px
+.loup
+  border: none
+  background-color: transparent
+  &:hover
+    cursor: pointer
+
+.searchInput
+  display: flex
+  border: 2px solid grey
+  border-radius: 20px
+  padding: 10px 20px
+  opacity: 0.7
+  transition: border 0.3s linear
+  &:hover
+    opacity: 1
+    border: 3px solid black
+
+  & input
+    border: none
+    width: 400px
+    font-size: 20px
+
+    &:focus
+      outline: 0
+  & button
+    font-size: 20px
+.favorite
+  display: grid
+  grid-template-columns: 33% 33% 33%
+  font-size: 40px
+
+.item
+  padding-left: 35px
+  transition: opacity .4s linear
+  &:hover
+    opacity: 0.6
+    cursor: pointer
+@media (max-width: 1200px)
+  .container
+    max-width: 970px
+  .searchInput
+    padding: 10px
+    & input
+      width: 300px
+      font-size: 15px
+
+  .logo
+    & img
+      height: 100px
+      width: 150px
+  .favorite
+    font-size: 35px
+@media (max-width: 992px)
+  .container
+    max-width: 750px
+
+  .searchInput
+    padding: 15px 5px 5px 10px
+
+    & input
+      width: 200px
+      font-size: 12px
+  .logo
+    & img
+      height: 60px
+      width: 110px
+  .contacts
+    display: none
+  .line
+    display: flex
+    justify-content: space-between
+  .favorite
+    font-size: 30px
+@media (max-width: 790px)
+  .container
+    max-width: none
+
+  .btn
+    display: none
+  .logo
+    & img
+      height: 40px
+      width: 80px
+  .favorite
+    font-size: 25px
