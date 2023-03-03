@@ -2,13 +2,14 @@ import React from 'react';
 import {Header} from "./modules/Module_Navigation/components/Header";
 import './index.sass'
 import {UIBar} from "./modules/Module_Navigation/components/UIBar";
+import {Categories} from "./modules/Module_Navigation/components/Categories";
 
 function App() {
   return (
     <div className="main">
-        <Header/>
-        <UIBar/>
-      <div>Hello world</div>
+            <Header/>
+            <UIBar/>
+            <Categories/>
     </div>
   );
 }
